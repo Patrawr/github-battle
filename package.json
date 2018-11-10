@@ -9,16 +9,15 @@
       "@babel/preset-react"
     ]
   },
-
   "scripts": {
     "start": "webpack-dev-server --open",
     "create": "webpack"
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0"
   },
