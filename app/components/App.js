@@ -3,6 +3,7 @@ let Popular = require('./Popular');
 let Home = require('./Home');
 let Battle = require('./Battle');
 let Nav = require('./Nav');
+let Results = require('./Results');
 
 let ReactRouter = require('react-router-dom');
 let Router = ReactRouter.BrowserRouter;
@@ -18,6 +19,7 @@ class App extends React.Component {
                     <Switch>
                         <Route exact path='/' component={Home} />
                         <Route exact path='/battle' component={Battle} />
+                        <Route path='/battle/results' component={Results}/>
                         <Route path='/popular' component={Popular} />
                         <Route render={function () {
                             return <p>Not Found</p>
